@@ -5,7 +5,7 @@ using namespace std;
 int dip_search(const std::vector<int>& V) {
     int n = V.size();
     int last_dip = -1;
-    for(int i = 0; i <= n-3; ++i) {
+    for(int i = 0; i < n-3; i++) {
         if (V[i] == V[i+2] && V[i+1] < V[i]) {
             last_dip = i;
         }
